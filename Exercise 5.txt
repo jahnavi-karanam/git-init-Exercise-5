@@ -1,0 +1,47 @@
+Exercise 5
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python (main)
+$ cd git-init-Exercise-5
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-Exercise-5 (main)
+$ ls
+file1.txt  file2.txt
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-Exercise-5 (main)
+$ vi file1.txt
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-Exercise-5 (main)
+$ git stash save "added new line"
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+Saved working directory and index state On main: added new line
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-Exercise-5 (main)
+$ cat file1.txt
+this is the fisrt file
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-Exercise-5 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-Exercise-5 (main)
+$ git stash list
+stash@{0}: On main: added new line
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-Exercise-5 (main)
+$ vi file1.txt
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-Exercise-5 (main)
+$ git stash save "second line has been added"
+Saved working directory and index state On main: second line has been added
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-Exercise-5 (main)
+$ git stash list
+stash@{0}: On main: second line has been added
+stash@{1}: On main: added new line
+
+Nithi@LAPTOP-R4SU6TA3 MINGW64 ~/Desktop/Python/git-init-Exercise-5 (main)
+$
